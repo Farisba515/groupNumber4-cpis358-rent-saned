@@ -1,14 +1,69 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- login.html : User Login Portal -->
+<!-- CPIS-358 Faris Boker & Abdullah Mujalled -->
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Login to Rent Saned medical equipment rental platform">
+    <meta name="keywords" content="medical, rental, login, wheelchair, crutches, Jeddah">
+    <meta name="author" content="Faris Boker, Abdullah Mujalled">
+    <title>Rent Saned - Login</title>
+
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
 </head>
 <body>
 
-    <p>
-        حيو يا حب منور</p>
+    <header>
+        <map name="loginmap">
+            <area shape="rect" coords="0,0,300,90" href="about.html" alt="About Rent Saned">
+        </map>
+        <h1>User Login</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
 
+    <article>
+        <section>
+            <h2>Access Your Account</h2>
+            <p>Please enter your registered credentials to manage your active rentals:</p>
+
+            <form method="post" action="login.html">
+
+                <p>
+                    <input type="hidden" name="form_type" value="customer_login">
+                </p>
+
+                <p>
+                    <label for="userEmail">Email Address:</label><br>
+                    <input type="email" id="userEmail" name="email" placeholder="name@domain.com" size="30" required autofocus>
+                </p>
+
+                <p>
+                    <label for="userPassword">Password:</label><br>
+                    <input type="password" id="userPassword" name="password" placeholder="Enter password" size="30" maxlength="25" required>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </p>
+            </form>
+
+            <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+        </section>
+    </article>
+
+    <footer>
+        <p>&copy; 2026 Rent Saned. All rights reserved.</p>
+        <address>
+            Contact us: <a href="mailto:info@rentsaned.com">info@rentsaned.com</a> | Jeddah, Saudi Arabia
+        </address>
+    </footer>
 </body>
 </html>
