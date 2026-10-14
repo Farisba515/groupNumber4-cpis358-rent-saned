@@ -9,11 +9,34 @@
     <meta name="author" content="Faris Boker,Abdullah Mujalled">
     <title>Rent Saned - Home</title>
     <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <style type="text/css">
+        table {
+            width: 100%;
+            border: 2px solid seagreen;
+        }
+
+        caption {
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th {
+            background-color: seagreen;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid lightgray;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="images/banner.png" alt="Rent Saned banner" width="900" height="260"  usemap="#bannermap">
-                <map name="bannermap">
+        <img src="images/banner.png" alt="Rent Saned banner" width="900" height="260" usemap="#bannermap">
+        <map name="bannermap">
             <area shape="rect" coords="0,0,900,260" href="about.html" alt="About Rent Saned">
         </map>
     </header>
@@ -26,7 +49,7 @@
         </ul>
     </nav>
     <h1 id="top">Welcome to Rent Saned</h1>
-    <p>Rent the medical equipment you need, for as long as you need it, without paying the full price.</p>
+    <p style="text-align: center; font-style: italic; color: gray;">Rent the medical equipment you need, for as long as you need it, without paying the full price.</p>
     <p>
         <a href="#idea">The Idea</a> |
         <a href="#benefits">Benefits</a> |
@@ -71,7 +94,7 @@
         </section>
         <section id="prices">
             <h2>Rental Prices</h2>
-            <table border="1">
+            <table>
                 <caption>Rental Prices (SAR)</caption>
                 <thead>
                     <tr>
