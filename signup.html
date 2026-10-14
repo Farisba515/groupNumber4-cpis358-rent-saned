@@ -14,10 +14,10 @@
 <body>
 
     <header>
-        <map name="signupmap">
-            <area shape="rect" coords="0,0,300,90" href="about.html" alt="About Rent Saned">
+        <img src="images/banner.png" alt="Rent Saned banner" width="900" height="260" usemap="#bannermap">
+        <map name="bannermap">
+            <area shape="rect" coords="0,0,900,260" href="about.html" alt="About Rent Saned">
         </map>
-        <h1>Create an Account</h1>
     </header>
 
     <nav>
@@ -28,6 +28,8 @@
             <li><a href="signup.html">Sign Up</a></li>
         </ul>
     </nav>
+
+    <h1>Create an Account</h1>
 
     <article>
         <section>
@@ -89,37 +91,4 @@
 
                 <p>
                     <strong>Account Type:</strong><br>
-                    <input type="radio" id="typeIndividual" name="account_type" value="Individual" checked>
-                    <label for="typeIndividual">Individual Patient / Family Caregiver</label><br>
-                    <input type="radio" id="typeClinic" name="account_type" value="Clinic">
-                    <label for="typeClinic">Healthcare Clinic / Rehabilitation Center</label>
-                </p>
-
-                <p>
-                    <label for="deliveryNotes">Special Delivery Instructions / Address Details:</label><br>
-                    <textarea id="deliveryNotes" name="notes" rows="4" cols="35"></textarea>
-                </p>
-
-                <p>
-                    <input type="checkbox" id="termsAgree" name="terms" value="accepted" required>
-                    <label for="termsAgree">I agree to the sanitation and security deposit terms.</label>
-                </p>
-
-                <p>
-                    <input type="submit" value="Register">
-                    <input type="reset" value="Clear">
-                </p>
-            </form>
-
-            <p>Already have an account? <a href="login.html">Log in here</a>.</p>
-        </section>
-    </article>
-
-    <footer>
-        <p>&copy; 2026 Rent Saned. All rights reserved.</p>
-        <address>
-            Contact us: <a href="mailto:info@rentsaned.com">info@rentsaned.com</a> | Jeddah, Saudi Arabia
-        </address>
-    </footer>
-</body>
-</html>
+                    <input type="radio" id="typeIndividual" name="account_type"
