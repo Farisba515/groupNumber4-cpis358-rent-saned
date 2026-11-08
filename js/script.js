@@ -104,14 +104,14 @@ function validateSignUpForm() {
     window.alert("Account created successfully!");
     return true;
 }
-function toggleInfo() {
-    var info = document.getElementById("info");
+function toggleInfo(id) {
+    var item = document.getElementById(id);
 
-    if (info.style.display == "none") {
-        info.style.display = "block";
-        info.style.color = "SeaGreen";
+    if (item.style.display == "none") {
+        item.style.display = "block";
+        item.style.color = "SeaGreen";
     }
     else {
-        info.style.display = "none";
+        item.style.display = "none";
     }
 }

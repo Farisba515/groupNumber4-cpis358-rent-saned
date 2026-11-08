@@ -90,26 +90,23 @@
         <section id="faq">
             <h2>Frequently Asked Questions (FAQ)</h2>
 
-            <details>
-                <summary>Is the equipment clean?</summary>
-                <p>
-                    Yes. We clean every item when it comes back to us, and we check that it works well
-                    before we send it to the next customer.
-               
-                </p>
-            </details>
+            <h3 onclick="toggleInfo('answer1')">Is the equipment clean?</h3>
+            <p id="answer1" style="display: none;">
+                Yes. We clean every item when it comes back to us, and we check that it works well
+        before we send it to the next customer.
+   
+            </p>
+            <h3 onclick="toggleInfo('answer2')">How do I get my deposit back?</h3>
+            <p id="answer2" style="display: none;">
+                When you finish, we pick up the item from your home and check it. Then we give you
+        back your 100 SAR deposit.
+   
+            </p>
 
-            <details>
-                <summary>How do I get my deposit back?</summary>
-                <p>
-                    When you finish, we pick up the item from your home and check it. Then we give you
-                    back your 100 SAR deposit.
-               
-                </p>
-            </details>
-            <button onclick="toggleInfo()">Show Working Hours</button>
+            <button onclick="toggleInfo('info')">Show Working Hours</button>
             <p id="info" style="display: none;">
                 Saturday to Thursday: 9 AM to 10 PM. Friday: 4 PM to 10 PM.
+   
             </p>
         </section>
     </article>
