@@ -114,3 +114,22 @@ button {
     button:hover {
         background-color: royalblue;
     }
+
+.note {
+    font-size: 14px;
+    font-style: italic;
+    color: gray;
+}
+
+
+.green {
+    color: SeaGreen;
+    font-weight: bold;
+}
+
+
+p.feedback {
+    font-weight: bold;
+    padding: 8px;
+    border-left: 4px solid SeaGreen;
+}

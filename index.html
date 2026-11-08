@@ -51,19 +51,19 @@
     </header>
 
     <h1 id="top">Welcome to Rent Saned</h1>
-    <h2 id="greeting"></h2>
+    <h2 id="greeting" class="center"></h2>
     <script>
         var now = new Date();
         var hour = now.getHours();
 
         if (hour < 12) {
-             document.getElementById("greeting").innerHTML = "Good Morning!";
+            document.getElementById("greeting").innerHTML = "Good Morning!";
         }
         else if (hour < 18) {
-             document.getElementById("greeting").innerHTML = "Good Afternoon!";
+            document.getElementById("greeting").innerHTML = "Good Afternoon!";
         }
         else {
-             document.getElementById("greeting").innerHTML = "Good Evening!";
+            document.getElementById("greeting").innerHTML = "Good Evening!";
         }
     </script>
     <p style="text-align: center; font-style: italic; color: gray;">Rent the medical equipment you need, for as long as you need it, without paying the full price.</p>
@@ -88,9 +88,10 @@
         <section id="benefits">
             <h2>Benefits</h2>
             <img id="equip" src="images/wheelchair.png" alt="Medical equipment"
-                width="250" height="250"
-                onmouseover="showNext()" onmouseout="showFirst()">
-            <p id="equipName">Wheelchair</p>
+                 width="250" height="250"
+                 onmouseover="showNext()" onmouseout="showFirst()">
+            <p id="equipName" class="green">Wheelchair</p>
+            <p class="note">Move the mouse over the picture to see another item.</p>
             <ul>
                 <li>Save money</li>
                 <li>No storage problem after you recover.</li>
@@ -98,6 +99,7 @@
                 <li>Free delivery to your home.</li>
             </ul>
         </section>
+
         <section id="how">
             <h2>How It Works</h2>
             <ol>
@@ -106,13 +108,13 @@
                     <ul>
                         <li>Mobility: wheelchair, crutches, walker</li>
                         <li>Home care: hospital bed</li>
-
                     </ul>
                 </li>
                 <li>We deliver it to your door.</li>
                 <li>When you finish, we pick it up</li>
             </ol>
         </section>
+
         <section id="prices">
             <h2>Rental Prices</h2>
             <table>
@@ -153,10 +155,11 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4">A refundable deposit of 100 SAR is taken for every item.</td>
+                        <td colspan="4" class="green">A refundable deposit of 100 SAR is taken for every item.</td>
                     </tr>
                 </tfoot>
             </table>
+
             <h3>Wheelchair Rental Cost by Weeks</h3>
             <script>
                 var price = 120;   // price of one week
@@ -167,13 +170,13 @@
 
                 for (week = 1; week <= 4; week++) {
                     document.writeln("<tr><td>" + week + "</td><td>" + (week * price) + "</td></tr>");
-                    }
+                }
 
                 document.writeln("</table>");
             </script>
         </section>
     </article>
-    <p class="center"><a href="#top">Back to top</a></p>
+    <p class="center note"><a href="#top">Back to top</a></p>
     <footer>
         <p>&copy; 2026 Rent Saned. All rights reserved.</p>
         <address>
