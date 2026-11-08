@@ -87,6 +87,8 @@ function validateSignUpForm() {
     }
     if (dateField.value == "") {
         feedback.innerHTML = "please enter a date ";
+        dateField.style.borderColor = "red";
+        return false;
     }
     else {
         dateField.style.color = "seagreen";
