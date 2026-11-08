@@ -40,17 +40,32 @@
         <map name="bannermap">
             <area shape="rect" coords="0,0,900,260" href="about.html" alt="About Rent Saned">
         </map>
-           <nav>
-       <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About Us</a></li>
-           <li><a href="login.html">Login</a></li>
-           <li><a href="signup.html">Sign Up</a></li>
-       </ul>
-   </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
     </header>
- 
+
     <h1 id="top">Welcome to Rent Saned</h1>
+    <h2 id="greeting"></h2>
+    <script>
+        var now = new Date();
+        var hour = now.getHours();
+
+        if (hour < 12) {
+             document.getElementById("greeting").innerHTML = "Good Morning!";
+        }
+        else if (hour < 18) {
+             document.getElementById("greeting").innerHTML = "Good Afternoon!";
+        }
+        else {
+             document.getElementById("greeting").innerHTML = "Good Evening!";
+        }
+    </script>
     <p style="text-align: center; font-style: italic; color: gray;">Rent the medical equipment you need, for as long as you need it, without paying the full price.</p>
     <p class="center">
         <a href="#idea">The Idea</a> |
@@ -83,12 +98,13 @@
             <h2>How It Works</h2>
             <ol>
                 <li>Create an account.</li>
-                <li>Choose the equipment you need:
-                     <ul>
-                         <li>Mobility: wheelchair, crutches, walker</li>
-                         <li>Home care: hospital bed</li>
-                         
-                     </ul>
+                <li>
+                    Choose the equipment you need:
+                    <ul>
+                        <li>Mobility: wheelchair, crutches, walker</li>
+                        <li>Home care: hospital bed</li>
+
+                    </ul>
                 </li>
                 <li>We deliver it to your door.</li>
                 <li>When you finish, we pick it up</li>
