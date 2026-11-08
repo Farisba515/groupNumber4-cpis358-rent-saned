@@ -36,7 +36,7 @@ nav {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: 900px;
+    width: 100%;
     z-index: 2;
 }
     nav ul {
@@ -71,12 +71,14 @@ p.callout {
 }
 header {
     position: relative;
-    width :900px;
+    
 }
     header img {
         position: relative;
         z-index: 1;
         display: block;
+        width: 100%;
+        height: auto;
     }
 a:link {
     color: skyblue;
