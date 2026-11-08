@@ -46,6 +46,8 @@ function validateSignUpForm() {
     var passField = document.getElementById("userPassword");
     var feedback = document.getElementById("formFeedback");
     var dateField = document.getElementById("birthDate");
+    var cityField = document.getElementById("citySelect");
+    var districField = document.getElementById("districtChoice");
 
     feedback.innerHTML = "";
     feedback.style.color = "red";
@@ -92,6 +94,23 @@ function validateSignUpForm() {
     }
     else {
         dateField.style.color = "seagreen";
+    }
+
+    if (cityField == "") {
+        feedback.innerHTML = "please fill choese the city ";
+        cityField.style.borderColor = "red";
+        return false;
+    }
+    else {
+        cityField.style.color = "seagreen";
+    }
+    if (districtChoice == "") {
+        feedback.innerHTML = "please fill choese the distric ";
+        districField.style.borderColor = "red";
+        return false;
+    }
+    else {
+        districField.style.color = "seagreen";
     }
 
     feedback.style.color = "lightgreen";
