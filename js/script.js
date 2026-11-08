@@ -45,6 +45,7 @@ function validateSignUpForm() {
     var phoneField = document.getElementById("userPhone");
     var passField = document.getElementById("userPassword");
     var feedback = document.getElementById("formFeedback");
+    var dateField = document.getElementById("birthDate");
 
     feedback.innerHTML = "";
     feedback.style.color = "red";
@@ -83,6 +84,12 @@ function validateSignUpForm() {
     }
     else {
         passField.style.borderColor = "seagreen";
+    }
+    if (dateField.value == "") {
+        feedback.innerHTML = "please enter a date ";
+    }
+    else {
+        dateField.style.color = "seagreen";
     }
 
     feedback.style.color = "lightgreen";
