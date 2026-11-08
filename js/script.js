@@ -1,5 +1,4 @@
 // script.js : external JavaScript file for Rent Saned
-// change the picture and the text when the mouse is over the image
 function showNext() {
     document.getElementById("equip").src = "images/walker.png";
     document.getElementById("equipName").innerHTML = "Walker";
@@ -20,7 +19,6 @@ function validateLoginForm() {
     if (emailField.value == "") {
         feedback.innerHTML = "Error: Please enter your email address.";
         emailField.style.borderColor = "red";
-        emailField.focus();
         return false;
     }
     else {
@@ -30,7 +28,6 @@ function validateLoginForm() {
     if (passField.value == "") {
         feedback.innerHTML = "Error: Please enter your password.";
         passField.style.borderColor = "red";
-        passField.focus();
         return false;
     }
     else {
@@ -42,7 +39,6 @@ function validateLoginForm() {
     window.alert("Welcome back to Rent Saned!");
     return true;
 }
-// Function to validate the customer registration form
 function validateSignUpForm() {
     var nameField = document.getElementById("fullName");
     var emailField = document.getElementById("userEmail");
@@ -57,7 +53,6 @@ function validateSignUpForm() {
     if (nameField.value == "") {
         feedback.innerHTML = "Error: Please enter your full name.";
         nameField.style.borderColor = "red";
-        nameField.focus();
         return false;
     }
     else {
@@ -67,7 +62,6 @@ function validateSignUpForm() {
     if (emailField.value == "") {
         feedback.innerHTML = "Error: Please enter your email address.";
         emailField.style.borderColor = "red";
-        emailField.focus();
         return false;
     }
     else {
@@ -77,7 +71,6 @@ function validateSignUpForm() {
     if (phoneField.value == "") {
         feedback.innerHTML = "Error: Please enter your phone number.";
         phoneField.style.borderColor = "red";
-        phoneField.focus();
         return false;
     }
     else {
@@ -87,7 +80,6 @@ function validateSignUpForm() {
     if (passField.value == "") {
         feedback.innerHTML = "Error: Please create a password.";
         passField.style.borderColor = "red";
-        passField.focus();
         return false;
     }
     else {
