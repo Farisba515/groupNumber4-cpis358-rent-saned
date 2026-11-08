@@ -36,9 +36,9 @@
     <article>
         <section>
             <h2>Access Your Account</h2>
-            <p>Please enter your registered credentials to manage your active rentals:</p>
+            <p id="loginFeedback" style="font-weight:bold;">Please enter your registered credentials to manage your active rentals:</p>
 
-            <form method="post" action="login.html">
+            <form method="post" action="login.html" onsubmit="return validateLoginForm();" >
 
                 <p>
                     <input type="hidden" name="form_type" value="customer_login">

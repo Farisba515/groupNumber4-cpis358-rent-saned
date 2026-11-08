@@ -39,7 +39,9 @@
             <h2>Registration Form</h2>
             <p>Please fill out this form to register and begin renting certified medical equipment:</p>
 
-            <form method="post" action="signup.html" autocomplete="on">
+            <p id="formFeedback" style="font-weight:bold;"></p>
+
+            <form method="post" action="signup.html" autocomplete="on" onsubmit="return validateSignUpForm();" >
 
                 <p>
                     <input type="hidden" name="form_type" value="new_customer_registration">
