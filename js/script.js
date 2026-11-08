@@ -10,3 +10,15 @@ function showFirst() {
     document.getElementById("equip").src = "images/wheelchair.png";
     document.getElementById("equipName").innerHTML = "Wheelchair";
 }
+// show or hide the contact information when the button is clicked
+function toggleInfo() {
+    var info = document.getElementById("info");
+
+    if (info.style.display == "none") {
+        info.style.display = "block";
+        info.style.color = "SeaGreen";
+    }
+    else {
+        info.style.display = "none";
+    }
+}
