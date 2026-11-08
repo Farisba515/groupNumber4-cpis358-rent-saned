@@ -44,7 +44,6 @@ function validateSignUpForm() {
     var emailField = document.getElementById("userEmail");
     var phoneField = document.getElementById("userPhone");
     var passField = document.getElementById("userPassword");
-    var termsBox = document.getElementById("termsAgree");
     var feedback = document.getElementById("formFeedback");
 
     feedback.innerHTML = "";
@@ -84,11 +83,6 @@ function validateSignUpForm() {
     }
     else {
         passField.style.borderColor = "seagreen";
-    }
-
-    if (termsBox.checked == false) {
-        feedback.innerHTML = "Error: You must agree to the rental terms.";
-        return false;
     }
 
     feedback.style.color = "lightgreen";
