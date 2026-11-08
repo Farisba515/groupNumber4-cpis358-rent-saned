@@ -99,3 +99,16 @@ input, select, textarea {
     input:focus, textarea:focus, select:focus {
         background-color: #383838;
     }
+button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: SeaGreen;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+    button:hover {
+        background-color: royalblue;
+    }

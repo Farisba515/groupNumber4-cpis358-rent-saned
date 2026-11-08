@@ -102,8 +102,7 @@
             <h2>How It Works</h2>
             <ol>
                 <li>Create an account.</li>
-                <li>
-                    Choose the equipment you need:
+                <li>Choose the equipment you need:
                     <ul>
                         <li>Mobility: wheelchair, crutches, walker</li>
                         <li>Home care: hospital bed</li>
@@ -158,6 +157,20 @@
                     </tr>
                 </tfoot>
             </table>
+            <h3>Wheelchair Rental Cost by Weeks</h3>
+            <script>
+                var price = 120;   // price of one week
+                var week;
+
+                document.writeln("<table>");
+                document.writeln("<tr><th>Weeks</th><th>Total (SAR)</th></tr>");
+
+                for (week = 1; week <= 4; week++) {
+                    document.writeln("<tr><td>" + week + "</td><td>" + (week * price) + "</td></tr>");
+                    }
+
+                document.writeln("</table>");
+            </script>
         </section>
     </article>
     <p class="center"><a href="#top">Back to top</a></p>
