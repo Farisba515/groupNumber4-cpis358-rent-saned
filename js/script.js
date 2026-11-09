@@ -104,7 +104,7 @@ function validateSignUpForm() {
     else {
         cityField.style.color = "seagreen";
     }
-    if (districtChoice == "") {
+    if (districField == "") {
         feedback.innerHTML = "please fill choese the distric ";
         districField.style.borderColor = "red";
         return false;
